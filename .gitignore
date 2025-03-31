@@ -1,0 +1,29 @@
+# Python bytecode files
+*.pyc
+*.pyo
+__pycache__/
+
+# Environment files
+.env
+venv/
+env/
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# Model files (pickle files, for example)
+*.pkl
+
+# Results files (if you don't want to track classification results)
+results/
+
+# OS files (Windows, macOS, Linux)
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+*.log.*
+
+# Miscellaneous
+*.swp
