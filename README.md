@@ -12,6 +12,7 @@ The project was developed for the course "Project: From Model to Production" (DL
 ├── image_classification_model.py  # Script to train the model
 ├── scaler.py                  # Script for feature scaling
 ├── run_batch.py               # Script for batch classification
+├── scheduler_setup.py         # Script for creation of a cron job/Windows task
 ├── model/                     # Directory for storing the trained model
 ├── dataset/                   # Directory for storing the dataset
 ├── new_products/              # Directory for storing new images for classification
@@ -55,6 +56,12 @@ To classify new images stored in `new_products/`, run:
 python run_batch.py
 ```
 Results will be saved in `results/classification_results.json`.
+
+### 5. Create a cron job/Windows task
+To create a cron job or Windows task (depending on your OS), run 
+```sh
+python scheduler_setup.py
+```
 
 ## How It Works
 - The **image classification model** extracts handcrafted features (histograms, edge detection, LBP, and HOG) and uses an SVM classifier.
